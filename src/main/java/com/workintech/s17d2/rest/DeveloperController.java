@@ -1,18 +1,15 @@
 package com.workintech.s17d2.rest;
 
-
-import com.workintech.s17d2.model.Developer;
-import com.workintech.s17d2.model.JuniorDeveloper;
-import com.workintech.s17d2.model.MidDeveloper;
-import com.workintech.s17d2.model.SeniorDeveloper;
-import jakarta.annotation.PostConstruct;
+import com.workintech.s17d2.model.*;
 import com.workintech.s17d2.tax.DeveloperTax;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.*;
 
 @RestController
-@RequestMapping("/workintech/developers")
+@RequestMapping("/developers")
 public class DeveloperController {
 
     public Map<Integer, Developer> developers;
